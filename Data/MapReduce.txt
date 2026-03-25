@@ -1,0 +1,28 @@
+MapReduce est un modèle de programmation et un framework open-source pour le traitement distribué de données volumineuses. Il est utilisé pour traiter des ensembles de données trop volumineux pour être stockés et traités sur un seul ordinateur. Cet exemple illustre les concepts clés de MapReduce en utilisant l'exemple simple de WordCount.
+
+Objectif:
+
+L'objectif de WordCount est de compter le nombre d'occurrences de chaque mot dans un ensemble de fichiers texte volumineux.
+
+Déroulement:
+
+Le processus WordCount s'articule en deux phases distinctes :
+
+1. Phase Map:
+
+Division des données: L'ensemble de fichiers texte est divisé en blocs de taille égale et distribué aux différents nœuds du cluster.
+Traitement local: Chaque nœud traite ensuite son bloc de données en extrayant chaque mot et en comptant son occurrence.
+Sortie: Les résultats intermédiaires, composés de paires clé-valeur (mot, occurrence), sont ensuite envoyés à la phase Reduce.
+2. Phase Reduce:
+
+Regroupement: Les paires clé-valeur sont regroupées par clé (le mot) afin de combiner les occurrences comptées sur chaque nœud.
+Agrégation: Pour chaque clé, les valeurs sont additionnées pour obtenir le nombre total d'occurrences du mot dans l'ensemble de fichiers.
+Sortie: Le résultat final est un fichier contenant le nombre d'occurrences de chaque mot dans l'ensemble de fichiers texte.
+Avantages de MapReduce:
+
+Scalabilité: MapReduce est capable de traiter des ensembles de données volumineuses en les distribuant sur plusieurs machines.
+Tolérance aux pannes: MapReduce est conçu pour tolérer les pannes de machines individuelles en relançant les tâches sur d'autres nœuds du cluster.
+Flexibilité: MapReduce peut être utilisé pour traiter différents types de données et implémenter divers cas d'utilisation.
+Conclusion:
+
+L'exemple WordCount est une illustration simple et pédagogique des concepts fondamentaux de MapReduce. Il montre comment MapReduce peut diviser un problème de traitement de données volumineuses en tâches plus petites et les exécuter en parallèle sur plusieurs machines. Cet exemple met également en lumière la scalabilité et la tolérance aux pannes de MapReduce, deux caractéristiques importantes pour les applications de traitement du Big Data.
