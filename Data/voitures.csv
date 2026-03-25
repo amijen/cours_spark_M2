@@ -1,0 +1,11 @@
+id,marque,categorie,prix,kilometrage,carburant,stock,remise_pct
+1,Renault Clio,citadine,15990,42000,essence,4,5
+2,Peugeot 308,berline,18900,51000,diesel,3,7
+3,Tesla Model 3,berline,39900,18000,electrique,2,3
+4,Dacia Duster,SUV,21400,35000,essence,5,10
+5,Toyota Yaris,citadine,17250,27000,hybride,6,
+6,BMW X3,SUV,45200,62000,diesel,1,4
+7,Renault Clio,citadine,15990,42000,essence,4,5
+8,Fiat 500,citadine,13200,,essence,2,8
+9,Kia Niro,SUV,28700,31000,hybride,,6
+10,Volkswagen Golf,berline,22100,47000,diesel,3,5
